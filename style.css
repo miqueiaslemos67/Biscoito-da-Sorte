@@ -1,0 +1,133 @@
+@charset "UTF-08";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(100deg, #190361 0%, #bb00ff 100%);
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 90vh;
+}
+
+main {
+  background-color: #ffffff;
+  box-shadow: 0 0.8rem 0.9rem rgba(0, 0, 0, 0.568);
+  border-radius: 0.6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  width: min(40rem, 90%);
+  text-align: center;
+}
+
+.cookie {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cookie:hover {
+  animation: shake 0.3s;
+  animation-iteration-count: 3;
+}
+
+.fortune-cookie h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.fortune-cookie p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Estilos do biscoito aberto */
+.fortune-cookie-opened {
+  display: none;
+  position: relative;
+}
+
+.fortune-cookie-opened img {
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+/* CSS para a mensagem de sorte */
+#fortune-text {
+  background-color: #E4EDF1;
+  font-family: "Dancing Script", cursive; 
+  font-size: 2rem; 
+  font-weight: 500; 
+  color: black;
+  padding: 1.5rem; 
+  margin-top: 2rem; 
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
+  display: none; /* Inicialmente escondido, será mostrado via JS */
+}
+
+
+#btnReset {
+  background-color: #ff9500;
+  width: 17.6rem;
+  height: 5.2rem;
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 2rem;
+}
+
+#btnReset:hover {
+  background-color: #523102da;
+  transform: translateY(0.2rem);
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Animação */
+@keyframes shake {
+    0% {
+      transform: translate(0.2rem, 0.2rem) rotate(0deg);
+    }
+    25% {
+      transform: translate(-0.3rem, -0.4rem) rotate(-1deg);
+    }
+    50% {
+      transform: translate(-0.3rem, 0.5rem) rotate(1deg);
+    }
+    75% {
+      transform: translate(0.2rem, -0.2rem) rotate(1deg);
+    }
+    100% {
+      transform: translate(0.6rem, -0.6rem) rotate(-4deg);
+    }
+  }
+  
+
